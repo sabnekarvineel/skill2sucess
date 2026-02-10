@@ -1,0 +1,147 @@
+.skills-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+  background-color: var(--light-color);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  color: var(--dark-color);
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.skills-form {
+  background: white;
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.form-section {
+  margin-bottom: 32px;
+}
+
+.form-section:last-of-type {
+  margin-bottom: 24px;
+}
+
+.form-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.skill-input-group select {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.skill-input-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.skill-input-group .btn {
+  padding: 12px 24px;
+  white-space: nowrap;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-chip button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  transition: var(--transition);
+}
+
+.skill-chip button:hover {
+  color: var(--secondary-color);
+}
+
+.message {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  border-left: 4px solid;
+}
+
+.message.success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.message.error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-large {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .skills-form {
+    padding: 24px 16px;
+  }
+
+  .skill-input-group {
+    flex-direction: column;
+  }
+
+  .skill-input-group .btn {
+    width: 100%;
+  }
+}
